@@ -1,0 +1,487 @@
+$back-color:#f8ffff;
+$txt-color:#00A6D9;
+$white-color:#fff;
+$black-color:#000;
+$back-footer:#474753;
+$color:#DFF6FB;
+$dark-color:#b1b1b1;
+
+
+@font-face {
+    font-family: 'myFont';
+    src: url("../fonts/JannaLT-Regular.ttf");
+  }
+div{
+    font-family: "myFont";
+}  
+body{
+    background-color: $back-color;
+}
+
+.courses{
+    background-color: $txt-color;
+    color: $white-color;
+    .courses_data{
+               justify-content: center;
+               align-items: center;
+               display: flex;
+        .sign{
+            a{
+                text-decoration: none;
+                text-transform: capitalize;
+                color: $white-color;
+                &:hover{
+                    color: $back-color;
+                }
+            }
+        }
+        .contact{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            ul{
+                
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            a{
+                text-decoration: none;
+                text-transform: capitalize;
+                color: $white-color;
+                &:hover{
+                    color: $back-color;
+                }
+            }
+        }
+               
+        }
+    }
+}
+.nav-menu{
+    background-color: $white-color;
+  .navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      img{
+        margin: auto;
+        width: 80px;
+        height: 80px;
+        @media only screen and (-webkit-min-device-pixel-ratio : 2) and (device-aspect-ratio: 2/3) {
+            //iphone4
+            width: 60px;
+            height: 60px;
+        } 
+        @media only screen and (-webkit-min-device-pixel-ratio : 2) and (device-aspect-ratio: 40/71) {
+           //iphone5
+           width: 60px;
+           height: 60px;
+        } 
+      }
+      .p-logo{
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+        @media only screen and (-webkit-min-device-pixel-ratio : 2) and (device-aspect-ratio: 2/3) {
+            //iphone4
+            font-size: 10px;
+        } 
+        @media only screen and (-webkit-min-device-pixel-ratio : 2) and (device-aspect-ratio: 40/71) {
+           //iphone5
+           font-size: 7px;
+        } 
+     }
+  }
+  .navbar-nav{
+    @media (max-width:768px){
+        padding-top: 5px;
+       border-top: 3px solid $color;
+    }
+      .nav-item{
+        .nav-link{
+            text-transform: capitalize;
+            line-height: 5;
+            font-size: 16px;
+            @media (max-width:768px){
+                line-height: 2;
+            }
+            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+                line-height: 1;
+                font-size: 14px;
+            }
+            @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+                font-size:14px;
+                line-height: 1;
+            }
+            &:hover{
+                color: $black-color;
+            }
+        }
+        &:after{
+            content: '';
+            display: block;
+            margin: auto;
+            height: 5px;
+            width: 0px;
+            background: transparent;
+            -webkit-transition: width .5s ease,background-color .5s ease;
+            transition: width .5s ease,background-color .5s ease;
+        }
+        &:hover:after {
+            width: 100%;
+           background-color: $color;
+        }
+    }
+
+  }
+}
+
+.content-one{
+    margin-bottom: 10%;
+    .img-content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .data{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        padding-right: 45px;
+       .data-start{
+           margin: auto;
+          font-size: 20px;
+       .btn{
+           background-color: $txt-color;
+           color: $white-color;
+           border: none;
+           margin-top: 30px;
+            padding: 10px 50px;
+            font-size: 18px;
+            border-radius: 150px;
+       }
+        p{
+            margin-top: 30px;
+            font-weight: 300;
+            line-height: 2;
+        }
+       }
+    }
+} 
+.content-two{
+    margin: 5% auto;
+    .top-content{
+        margin: 2% auto 7%;
+        h2{
+            color: $txt-color;
+            text-transform: capitalize;
+            font-size: 40px;
+        }
+        p{
+            text-transform: capitalize;
+            font-size: 15px;
+        }
+    }
+    .img-content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .data{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        padding-left: 45px;
+       .data-create{
+           margin: auto;
+        font-size: 20px;
+        .create{
+            color: $black-color;
+            background-color: $color;
+            text-decoration: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        p{
+            margin-top: 30px;
+            font-weight: 300;
+            line-height: 2;
+            a{
+                color: $txt-color;
+                text-decoration: none;
+            &:hover{
+                cursor: pointer;
+            } 
+            }
+        }
+       }
+    }
+} 
+
+
+.content-three{
+    margin: 5% auto;
+    .img-content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .data{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        padding-right: 45px;
+       .data-choose{
+           margin: auto;
+          font-size: 20px;
+        .choose{
+            color: $black-color;
+            background-color: $color;
+            text-decoration: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        p{
+            margin-top: 30px;
+            font-weight: 300;
+            line-height: 2;
+            a{
+                color: $txt-color;
+                text-decoration: none;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+       }
+    }
+} 
+
+.content-four{
+    margin: 5% auto;
+    .img-content{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .data{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        padding-left: 45px;
+       .data-push{
+           margin: auto;
+        font-size: 20px;
+        .push{
+            color: $black-color;
+            background-color: $color;
+            text-decoration: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        p{
+            margin-top: 30px;
+            font-weight: 300;
+            line-height: 2;
+            a{
+                color: $txt-color;
+                text-decoration: none;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+       }
+    }
+} 
+
+.content-five{
+    margin: 10% auto;
+    .data{
+        margin-bottom: 10%;
+        h2{
+            color: $txt-color;
+            text-transform: capitalize;
+        }
+        p{
+            text-transform: capitalize;
+            font-size: 13px;
+        }
+    }
+    .slider-user{
+        margin-top: 5%;
+      
+       .show_client{
+           p{
+                text-align: center;
+                color: $white-color;
+                border-radius: 5px;
+                font-size:20px;
+                font-weight: 300;
+                line-height: 1.8;
+                position: relative;
+                margin-bottom: 30px;
+                padding: 30px 20px;
+                background-color: $txt-color;
+                @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+                    font-size:16px;
+                    line-height: 1.2;
+                }
+                @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+                    font-size:16px;
+                    line-height: 1.2;
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    text-align: center;
+                    border-style: solid;
+                    border-width: 30px;
+                    margin-top: 25px;
+                    border-color: $txt-color transparent transparent;
+                    position: absolute;
+                    right: 44%;
+
+                }
+           }
+           .img-client{
+               justify-content: center;
+               align-items: center;
+               display: flex;
+               img{
+                    border-radius: 50%;
+                    margin: 2% auto;
+                   border: 3px solid rgba(204, 204, 204, 0.6);
+               }
+           }
+           .data-client{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-align: center;
+            ul{
+                li{
+                    margin: 10px auto;
+                    list-style: none;
+                    text-align: center;
+                    line-height: 1.2;
+                    padding: 0;
+                }
+            }
+           }
+       }
+    }
+    .owl-carousel{
+        .owl-item{
+            img{
+                width: auto;
+            }
+        } 
+        .owl-nav{
+            text-align: center;
+            .fa-chevron-left{
+                margin-right:5px;
+                color: $txt-color; 
+            }
+            .fa-chevron-right{
+                margin-left:5px;
+                color: $txt-color; 
+            }
+        }
+    } 
+}
+
+
+
+.content-six{
+    .content{
+        margin-bottom: 2%;
+        h4{
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+            @media only screen and (-webkit-min-device-pixel-ratio : 2) and (device-aspect-ratio: 2/3) {
+                font-size: 30px;
+            } 
+            @media only screen and (-webkit-min-device-pixel-ratio : 2) and (device-aspect-ratio: 40/71) {
+                font-size: 30px;
+            } 
+            a{
+                text-decoration: none;
+                background-color: $txt-color;
+                color: $white-color;
+                font-weight: 200;
+                font-size: 20px;
+                padding: 5px 30px;
+                border-radius: 300px;
+            
+            }
+        }
+        .socialmedia{
+            font-size: 18px;
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                color: $txt-color;
+                &:after{
+                    content: "";
+                    border-right: 1px solid $dark-color;
+                    margin: auto 4px;
+                    line-height: 1;
+                   
+                }
+                &:last-child{
+                    &:after{
+                        border-right: none;
+                        }
+                }
+            }
+        }
+    }
+    .img-six{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            margin: auto;
+        img{
+            width: 50%;
+            height: 100%;
+        }
+    }
+        
+}
+
+
+footer{
+    margin-top: 5%;
+    .footer-data{
+        background-color: $back-footer;
+        color: $white-color;
+        font-size: 16px;
+        p{
+            margin-top: 1rem;
+            a{
+                text-decoration: none;
+                color: $txt-color;
+            }
+        }
+        ul{
+            margin-top: 1rem;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $txt-color;
+                }
+            }
+        }
+    }
+}
